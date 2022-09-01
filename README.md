@@ -57,12 +57,12 @@ Your readme will have various images and gifs on it. Upload a test image and tes
 
 ### Test Link
 
-[test.py](https://github.com/jkrosby51/Engineering_4_Notebook/blob/main/raspberry-pi/test.py)
+[test.py](raspberry-pi/test.py)
 
 ### Test Image
 
-![Apple](https://github.com/jkrosby51/Engineering_4_Notebook/blob/main/raspberry-pi/apple.jfif)
+![Apple](raspberry-pi/apple.jfif)
 
 ### Test GIF
 
-![Another Apple](https://github.com/jkrosby51/Engineering_4_Notebook/blob/main/raspberry-pi/apple-31.gif)
+![Another Apple](raspberry-pi/apple-31.gif)
