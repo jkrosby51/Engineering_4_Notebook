@@ -27,7 +27,7 @@ while True:
             rled.value = False
             time.sleep(0.5)
             if btn.value:         # if you press the button during the for loop it will break the for loop, canceling the countdown
-                print("Launch Canceled")
+                print("ABORT")
                 time.sleep(0.2)   # Delay between btn press and break, to avoid accidental double presses, restarting the countdown
                 break
             
