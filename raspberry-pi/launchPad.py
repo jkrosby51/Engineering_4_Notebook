@@ -6,9 +6,8 @@ import time
 led = digitalio.DigitalInOut(board.LED)
 led.direction = digitalio.Direction.OUTPUT
 
-#LEDs will be implemented in the future
 rled = digitalio.DigitalInOut(board.GP14)      # pin number (GP14 here) found on Pico Pin Map
-rled.direction = digitalio.Direction.OUTPUT    # sets pin ype (output or input)
+rled.direction = digitalio.Direction.OUTPUT    # sets pin type
 gled = digitalio.DigitalInOut(board.GP15)
 gled.direction = digitalio.Direction.OUTPUT
 btn = digitalio.DigitalInOut(board.GP13)
@@ -20,17 +19,17 @@ while True:
     if btn.value:
         gled.value = False
         print("Launch Countdown Starting")
+        time.sleep(0.2)
         for x in range(10):       # runs 10 times, from 0 to 9
             print(10-x)           # 10-x used to make the countdown go from 10 to 1
             rled.value = True     # blinks on for half a second and then off for half a second, every second during the cooldown
-            time.sleep(0.5)       # var in seconds
+            time.sleep(0.5)       # IN SECONDS
             rled.value = False
             time.sleep(0.5)
             if btn.value:         # if you press the button during the for loop it will break the for loop, canceling the countdown
-                launched = False
+                print("Launch Canceled")
+                time.sleep(0.2)   # Delay between btn press and break, to avoid accidental double presses, restarting the countdown
                 break
-                
-
             
         gled.value = True
         print("Liftoff!");
