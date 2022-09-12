@@ -3,16 +3,16 @@
 &nbsp;
 
 ## Table of Contents
-* [Raspberry_Pi_Assignment_Template](#raspberry_pi_assignment_template)
+* [Launch_Pad](#launch_pad)
 * [Onshape_Assignment_Template](#onshape_assignment_template)
 
 &nbsp;
 
-## Raspberry_Pi_Assignment_Template
+## Launch_Pad
 
 ### Assignment Description
 
-Write your assignment description here. What is the purpose of this assignment? It should be at least a few sentences.
+Simulate the countdown and basic launch sequence of a rocket, using a Raspberry pico and Circuit Python.
 
 ### Evidence 
 
@@ -20,14 +20,14 @@ Pictures / Gifs of your work should go here. You need to communicate what your t
 
 ### Wiring
 
-This may not be applicable to all assignments. Anything where you wire something up, include the wiring diagram here. The diagram should be clear enough that I can recreate the wiring from scratch. 
+![Wiring Diagram](https://github.com/jkrosby51/Engineering_4_Notebook/blob/main/images/launchPad-Wiring.png)
 
 ### Code
-Give me a link to your code. [Something like this](https://github.com/millerm22/Engineering_4_Notebook/blob/main/Raspberry_Pi/hello_world.py). Don't make me hunt through your folders, give me a nice link to click to take me there! Remember to **COMMENT YOUR CODE** if you want full credit. 
+[Link to Code](https://github.com/jkrosby51/Engineering_4_Notebook/blob/main/raspberry-pi/launchPad.py)
 
 ### Reflection
 
-What went wrong / was challenging, how'd you figure it out, and what did you learn from that experience? Your goal for the reflection is to pass on knowledge that will make this assignment better or easier for the next person. Think about your audience for this one, which may be "future you" (when you realize you need some of this code in three months), me, or your college admission committee!
+The main issue I had to solve was in allowing the user to abort the countdown at any time by pressing the button. Originally I was using `time.sleep(seconds)` to control the speed of the program (led blinks every half a second, and countdown counts seconds), however, `time.sleep()` puts the entire program to rest for the specified time, meaning the button cant be pressed during the delay. Since this left for only a small window each second where the button would work, I had to find another way to do it. The final result is shown in the code, but it essentially takes the time each second, and every frame within that second, it checks current time - initial time to see how much time has passed since the initial time was taken. This allowed me to control the time without forcing any delays in the code. Another small problem was that `time.time()`, which is used to check the current time, doesnt work correctly with circuit python, and had to be replaced with `time.monotonic()`.
 
 &nbsp;
 
