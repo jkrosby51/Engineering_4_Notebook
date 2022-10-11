@@ -45,6 +45,7 @@ Simulate the data of a moving in-air vehicle. Keep track of and display the x, y
 ### Wiring
 
 ![wiring](https://github.com/jmuss07/Engineering_4_Notebook/blob/main/images/CAP3wiring.PNG)
+
 Wiring diagram [from Josie](https://github.com/jmuss07/Engineering_4_Notebook/blob/main/images/CAP3wiring.PNG)
 
 ### Code
