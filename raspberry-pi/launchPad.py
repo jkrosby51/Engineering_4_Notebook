@@ -58,10 +58,12 @@ while True:
                 rled.value = False
                 print("ABORT")
                 time.sleep(0.2)
+            if angle < 180 and 0 < x < 6:
+                servo1.angle = angle + 2
         if launched and x == 0:
             rled.value = False
             gled.value = True
             print("Liftoff!")
-            for angle in range(0, 180, 1):    # 180 - 0 degrees, -1º at a time.
-                #print(angle)
-                servo1.angle = angle
+            # for angle in range(0, 180, 1):    # 180 - 0 degrees, -1º at a time.
+            #     #print(angle)
+            #     servo1.angle = angle
