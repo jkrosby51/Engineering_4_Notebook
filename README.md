@@ -4,6 +4,7 @@
 
 ## Table of Contents
 * [Launch_Pad](#launch_pad)
+* [Crash_Avoidance](#crash_avoidance)
 * [Onshape_Assignment_Template](#onshape_assignment_template)
 
 &nbsp;
@@ -23,11 +24,35 @@ Pictures / Gifs of your work should go here. You need to communicate what your t
 ![Wiring Diagram](https://github.com/jkrosby51/Engineering_4_Notebook/blob/main/images/launchPad-Wiring.png)
 
 ### Code
-[Link to Code](https://github.com/jkrosby51/Engineering_4_Notebook/blob/main/raspberry-pi/launchPad.py)
+[Link to code](https://github.com/jkrosby51/Engineering_4_Notebook/blob/main/raspberry-pi/launchPad.py)
 
 ### Reflection
 
 The main issue I had to solve was in allowing the user to abort the countdown at any time by pressing the button. Originally I was using `time.sleep(seconds)` to control the speed of the program (led blinks every half a second, and countdown counts seconds), however, `time.sleep()` puts the entire program to rest for the specified time, meaning the button cant be pressed during the delay. Since this left for only a small window each second where the button would work, I had to find another way to do it. The final result is shown in the code, but it essentially takes the time each second, and every frame within that second, it checks current time - initial time to see how much time has passed since the initial time was taken. This allowed me to control the time without forcing any delays in the code. Another small problem was that `time.time()`, which is used to check the current time, doesnt work correctly with circuit python, and had to be replaced with `time.monotonic()`.
+
+&nbsp;
+
+## Crash_Avoidance
+
+### Assignment Description
+
+Simulate the data of a moving in-air vehicle. Keep track of and display the x, y, and z, acceleration values of the vehicle and give a warning if it is on it's side or upsidedown. The module also has to be powered off of a mobile power source.
+
+### Evidence 
+
+![gif showing crash avoidance module](https://github.com/jkrosby51/Engineering_4_Notebook/blob/main/images/ezgif.com-gif-maker.gif)
+
+### Wiring
+
+![wiring](https://github.com/jmuss07/Engineering_4_Notebook/blob/main/images/CAP3wiring.PNG)
+Wiring diagram [from Josie](https://github.com/jmuss07/Engineering_4_Notebook/blob/main/images/CAP3wiring.PNG)
+
+### Code
+[Link to code](https://github.com/jkrosby51/Engineering_4_Notebook/blob/main/raspberry-pi/crashAvoidance.py)
+
+### Reflection
+
+FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER 
 
 &nbsp;
 
