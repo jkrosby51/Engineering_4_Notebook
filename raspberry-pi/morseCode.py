@@ -4,10 +4,12 @@ import board
 import digitalio
 import pwmio
 import busio
+import simpleio
 from adafruit_display_text import label
 import adafruit_displayio_ssd1306
 import terminalio
 import displayio
+
 
 displayio.release_displays()
 
@@ -69,13 +71,17 @@ while True:
         #print(f"{letter} -> {MORSE_CODE[letter.upper()]}")
         if(letter != " "):
             for sandwhich in MORSE_CODE[letter.upper()]:
-                if MORSE_CODE[letter.upper()] == ".": 
-                    rled.value = True
-                    time.sleep(dot_time)
-                elif MORSE_CODE[letter.upper()] == "-": 
-                    rled.value = True
-                    time.sleep(dash_time)
+                if sandwhich == ".": 
+                    simpleio.tone(board.GP18, 440, dot_time)
+                    #rled.value = True
+                    #time.sleep(dot_time)
+                elif sandwhich == "-": 
+                    simpleio.tone(board.GP18, 440, dash_time)
+                    #rled.value = True
+                    #time.sleep(dash_time)
                 rled.value = False
+                if letter == " ": time.sleep(between_words)
+                else: time.sleep(between_letters)
         if letter == " ": time.sleep(between_words)
         else: time.sleep(between_letters)
 
