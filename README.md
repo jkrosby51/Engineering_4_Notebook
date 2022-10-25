@@ -5,9 +5,10 @@
 ## Table of Contents
 * [Launch_Pad](#launch_pad)
 * [Crash_Avoidance](#crash_avoidance)
+* [Landing_Area](#landing_area)
 * [Onshape_Assignment_Template](#onshape_assignment_template)
 
-&nbsp;
+&nbsp; 
 
 ## Launch_Pad
 
@@ -17,7 +18,10 @@ Simulate the countdown and basic launch sequence of a rocket, using a Raspberry 
 
 ### Evidence 
 
-Pictures / Gifs of your work should go here. You need to communicate what your thing does. 
+![Evidence](https://github.com/jmuss07/Engineering_4_Notebook/blob/main/images/Launchpad%20pt4.gif)
+
+Evidence gif [from Josie](https://github.com/jmuss07/Engineering_4_Notebook/blob/main/images/Launchpad%20pt4.gif)
+
 
 ### Wiring
 
@@ -53,7 +57,35 @@ Wiring diagram [from Josie](https://github.com/jmuss07/Engineering_4_Notebook/bl
 
 ### Reflection
 
-FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER FINISH LATER 
+One part of this assignment that caused some trouble, was managing two devices both using I2C. Since error messages found were not very descriptive, I ended up having trouble finding what exactly was wrong. I was able to solve all of the problems by completely redoing my wiring. I didn't find the issue when simply looking at my wiring, but when I did a full restart it ended up working. Sometimes the best thing to do is just completely restart on the wiring and/or code, and do it better the second time.
+
+&nbsp;
+
+## Landing_Area
+
+### Assignment Description
+
+In this assignment, I take three vertices from the user, find the area of the given triangle, and display the given triangle on an OLED screen.
+
+### Evidence 
+
+![Evidence gif](https://github.com/jmuss07/Engineering_4_Notebook/blob/main/images/LAP2.gif)
+
+Evidence gif [from Josie](https://github.com/jmuss07/Engineering_4_Notebook/blob/main/images/LAP2.gif)
+
+### Wiring
+
+![Wiring Diagram](https://github.com/jmuss07/Engineering_4_Notebook/blob/main/images/LAP2wiring.PNG)
+
+Wiring diagram [from Josie](https://github.com/jmuss07/Engineering_4_Notebook/blob/main/images/LAP2wiring.PNG)
+
+### Code
+
+Link to [code](https://github.com/jkrosby51/Engineering_4_Notebook/blob/main/raspberry-pi/landingArea.py)
+
+### Reflection
+
+I didn't have many issues during this assignment, but I did have to create a bit of a process for creating the try loop. When coding, it was important for me to exclude the try except statement until after I was sure that my code works fine, otherwise it would create an infinite loop, as well as exclude important error messages that I needed for debugging.
 
 &nbsp;
 
@@ -75,4 +107,5 @@ Take a nice screenshot of your Onshape document.
 
 What went wrong / was challenging, how'd you figure it out, and what did you learn from that experience? Your goal for the reflection is to pass on knowledge that will make this assignment better or easier for the next person. Think about your audience for this one, which may be "future you" (when you realize you need some of this code in three months), me, or your college admission committee!
 
-&nbsp;
+
+
