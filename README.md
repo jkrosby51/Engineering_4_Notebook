@@ -6,6 +6,7 @@
 * [Launch_Pad](#launch_pad)
 * [Crash_Avoidance](#crash_avoidance)
 * [Landing_Area](#landing_area)
+* [Morse_Code](#morse_code)
 * [Onshape_Assignment_Template](#onshape_assignment_template)
 
 &nbsp; 
@@ -86,6 +87,34 @@ Link to [code](https://github.com/jkrosby51/Engineering_4_Notebook/blob/main/ras
 ### Reflection
 
 I didn't have many issues during this assignment, but I did have to create a bit of a process for creating the try loop. When coding, it was important for me to exclude the try except statement until after I was sure that my code works fine, otherwise it would create an infinite loop, as well as exclude important error messages that I needed for debugging.
+
+&nbsp;
+
+## Morse_Code
+
+### Assignment Description
+
+In this assignment, I took a user inputted string, and converted it to morse code. I then used both an LED and a piezzo buzzer to repeat the user's string in morse code.
+
+### Evidence 
+
+![evidence](https://github.com/jmuss07/Engineering_4_Notebook/blob/main/images/MCP2.gif)
+
+Evidence [from Josie](https://github.com/jmuss07/Engineering_4_Notebook/blob/main/images/MCP2.gif)
+
+### Wiring
+
+![Wiring](https://github.com/jmuss07/Engineering_4_Notebook/blob/main/images/LAP2wiring.PNG)
+
+Wiring Diagram [from Josie](https://github.com/jmuss07/Engineering_4_Notebook/blob/main/images/LAP2wiring.PNG)
+
+### Code
+
+Link to [code](https://github.com/jkrosby51/Engineering_4_Notebook/blob/main/raspberry-pi/morseCode.py)
+
+### Reflection
+
+This assignment went fairly smoothly, thought I did find some small issues by not double checking my code too closely. The piezo buzzer was very simple to wire and run, using `simpleio.tone(PIN, FREQ, LENGTH)` (you need to import simpleio first). Another small bit of code that saves a lot of time, is converting the user input into all lowercase before attempting to convert it using a dictionary. This makes sure that no matter what capitalization the user puts, it will always convert flawlessly.
 
 &nbsp;
 
