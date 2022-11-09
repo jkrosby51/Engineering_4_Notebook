@@ -7,7 +7,7 @@
 * [Crash_Avoidance](#crash_avoidance)
 * [Landing_Area](#landing_area)
 * [Morse_Code](#morse_code)
-* [Onshape_Assignment_Template](#onshape_assignment_template)
+* [Beam_Design](#beam_design)
 
 &nbsp; 
 
@@ -118,9 +118,9 @@ This assignment went fairly smoothly, thought I did find some small issues by no
 
 &nbsp;
 
-## Onshape_Assignment_Template
+## Beam_Design
 
-### Assignment Description
+### Design a 3D printed beam with one connection, to withstand as much weight as possible, based on vertical displacement and whether or not it breaks. The beam must use the given attachment block, be within 13g, 190mm long, and have no overhangs.
 
 Write your assignment description here. What is the purpose of this assignment? It should be at least a few sentences.
 
