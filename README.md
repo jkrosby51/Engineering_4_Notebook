@@ -120,17 +120,17 @@ This assignment went fairly smoothly, thought I did find some small issues by no
 
 ## Beam_Design
 
-### Design a 3D printed beam with one connection, to withstand as much weight as possible, based on vertical displacement and whether or not it breaks. The beam must use the given attachment block, be within 13g, 190mm long, and have no overhangs.
+### Assignment Description
 
-Write your assignment description here. What is the purpose of this assignment? It should be at least a few sentences.
+Design a 3D printed beam with one connection, to withstand as much weight as possible, based on vertical displacement and whether or not it breaks. The beam must use the given attachment block, be within 13g, 190mm long, and have no overhangs.
 
 ### Part Link 
 
-[Create a link to your Onshape document](https://cvilleschools.onshape.com/documents/003e413cee57f7ccccaa15c2/w/ea71050bb283bf3bf088c96c/e/c85ae532263d3b551e1795d0?renderMode=0&uiState=62d9b9d7883c4f335ec42021). Don't forget to turn on link sharing in your Onshape document so that others can see it. 
+[Onshape Document](https://cvilleschools.onshape.com/documents/fe9a149dbe992ae7287efdeb/w/abd769837872c651926f3788/e/81ef499ee19e4e9cf251027e?renderMode=0&uiState=637526cf34abbb53458f122f)
 
 ### Part Image
 
-Take a nice screenshot of your Onshape document. 
+![Beam Design](https://github.com/jkrosby51/Engineering_4_Notebook/blob/main/images/beamDesignOnshape.png)
 
 ### Reflection
 
